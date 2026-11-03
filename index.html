@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi | M Farhan Pratama</title>
+    <meta name="description"
+        content="Portofolio M Farhan Pratama - Lulusan D3 Manajemen Informatika, Junior Web Developer & Office Administration.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <!-- File CSS Eksternal -->
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+
+<body>
+
+    <!-- OVERLAY SIDEBAR MOBILE -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- SIDEBAR NAVIGASI MOBILE -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-logo">Portofolio Farhan.</span>
+            <button class="sidebar-close" id="sidebarClose" aria-label="Tutup navigasi">&#10005;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul class="sidebar-links">
+                <li><a href="#hero" class="sidebar-link active" data-section="hero">&#127968; Beranda</a></li>
+                <li><a href="#pendidikan" class="sidebar-link" data-section="pendidikan">&#127891; Pendidikan</a></li>
+                <li><a href="#pengalaman" class="sidebar-link" data-section="pengalaman">&#128188; Pengalaman</a></li>
+                <li><a href="#projek" class="sidebar-link" data-section="projek">&#128187; Projek</a></li>
+                <li><a href="#keahlian" class="sidebar-link" data-section="keahlian">&#128295; Keahlian</a></li>
+                <li><a href="#organisasi" class="sidebar-link" data-section="organisasi">&#127963; Organisasi &amp;
+                        Kepanitiaan</a></li>
+                <li><a href="#dokumentasi" class="sidebar-link" data-section="dokumentasi">&#128247; Dokumentasi</a>
+                </li>
+                <li><a href="#kontak" class="sidebar-link" data-section="kontak">&#9993; Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <p>&copy; 2026 M Farhan Pratama</p>
+        </div>
+    </aside>
+
+    <!-- NAVIGASI MELAYANG (TOP NAV) -->
+    <div class="nav-wrapper">
+        <nav>
+            <div class="logo">Portofolio Farhan.</div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#pendidikan" class="nav-link" data-section="pendidikan">Pendidikan</a></li>
+                <li><a href="#pengalaman" class="nav-link" data-section="pengalaman">Pengalaman</a></li>
+                <li><a href="#projek" class="nav-link" data-section="projek">Projek</a></li>
+                <li><a href="#keahlian" class="nav-link" data-section="keahlian">Keahlian</a></li>
+                <li><a href="#organisasi" class="nav-link" data-section="organisasi">Organisasi &amp; Kepanitiaan</a>
+                </li>
+                <li><a href="#dokumentasi" class="nav-link" data-section="dokumentasi">Dokumentasi</a></li>
+                <li><a href="#kontak" class="nav-link" data-section="kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!-- HERO SECTION -->
+        <section id="hero">
+            <div class="hero-text" data-aos="fade-right">
+                <h1><span class="typed-text" id="typedText"></span><span class="typing-cursor">|</span></h1>
+            <p style="text-align: justify;">
+              Halo, saya <strong>M Farhan Pratama</strong>, lulusan D3 Manajemen Informatika
+              Politeknik Negeri Sriwijaya dengan IPK <strong>3,72 (Dengan Pujian)</strong>. Saya memiliki minat dalam pengembangan aplikasi berbasis web menggunakan PHP Native, Laravel, dan MySQL, dan juga bisa menangani
+              administrasi perkantoran serta pengarsipan dokumen. Selama kuliah, saya pernah menjabat
+              sebagai <strong>Ketua Himpunan Mahasiswa Jurusan (HMJ)</strong> dan menjalani magang di
+              <strong>PT Pupuk Sriwidjaja (PUSRI)</strong> serta melakukan penelitian Laporan Akhir di
+              <strong>PT Tirta Osmosis Sampurna (Alfa One)</strong>. Pengalaman tersebut membuat saya terbiasa bekerja dengan teliti dan berkoordinasi dalam tim.
+              </p>
+                <div class="hero-buttons">
+                    <a href="#kontak" class="cta-btn cta-btn-primary">Hubungi Saya</a>
+                    <a href="uploads/cv/CV FARHAN FIX.pdf" class="cta-btn cta-btn-secondary"
+                        download="CV_M_Farhan_Pratama.pdf" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Unduh CV (PDF)</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="hero-avatar-container">
+                    <div class="hero-image-wrapper">
+                        <img src="uploads/hero/foto1.png" alt="Foto M Farhan Pratama">
+                    </div>
+                    <div class="role-badge-gradient">
+                        <span>Junior Web Developer | Office Administration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RIWAYAT PENDIDIKAN SECTION -->
+        <section id="pendidikan">
+            <p class="edu-subtitle" data-aos="fade-up">BACKGROUND</p>
+            <h2 class="section-title" data-aos="fade-up">Riwayat Pendidikan</h2>
+
+            <div class="education-timeline" data-aos="fade-up">
+
+                <div class="edu-item">
+                    <div class="edu-dot"></div>
+
+                    <div class="edu-card">
+                        <h3>D3 Manajemen Informatika</h3>
+                        <p>Politeknik Negeri Sriwijaya &bull; IPK 3.72 / 4.00 (Dengan Pujian)</p>
+
+                        <span class="edu-badge">Tahun 2023 - 2026</span>
+                    </div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-dot"></div>
+
+                    <div class="edu-card">
+                        <h3>Madrasah Aliyah Negeri 2 Palembang</h3>
+                        <p>Jurusan Ilmu Pengetahuan Sosial &bull; Nilai Akhir 87.45 / 90.00</p>
+
+                        <span class="edu-badge">Tahun 2020 - 2023</span>
+                    </div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-dot"></div>
+
+                    <div class="edu-card">
+                        <h3>SMP Negeri 10 Palembang</h3>
+                         <p>Nilai Akhir 85 / 90.00</p>
+                        <span class="edu-badge">Tahun 2017 - 2020</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PENGALAMAN KERJA / MAGANG SECTION -->
+        <section id="pengalaman">
+            <p class="edu-subtitle" data-aos="fade-up">CAREER &amp; EXPERIENCE</p>
+            <h2 class="section-title" data-aos="fade-up">Pengalaman Kerja &amp; Magang</h2>
+
+            <div class="exp-list">
+
+                <!-- PENGALAMAN 1: PT PUPUK SRIWIDJAJA PALEMBANG -->
+                <div class="exp-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="exp-header">
+                        <div class="exp-title-group">
+                            <h3>Magang Departemen Teknologi Informasi PUSRI</h3>
+                            <div class="exp-company">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                                <span>PT Pupuk Sriwidjaja (PUSRI) Palembang</span>
+                            </div>
+                            <p class="exp-dept">Tugas selama kegiatan:</p>
+                        </div>
+                        <div class="exp-badges">
+                            <span class="exp-badge-period">Juli &ndash; Oktober 2025</span>
+                            <span class="exp-badge-type">Kerja Praktik</span>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Mendesain mockup antarmuka pengguna (UI/UX) aplikasi berbasis website menggunakan Figma
+                            dengan tata letak modern dan responsif.</li>
+                        <li>Mengembangkan dan menguji sistem pelaporan insiden kerja berbasis website untuk kebutuhan
+                            monitoring Departemen K3 PT Pupuk Sriwidjaja Palembang.</li>
+                        <li>Bertanggung jawab penuh atas operasional sistem pemindaian barcode presensi digital bagi
+                            ratusan peserta Event Inovasi Tahunan SRINOVA PUSRI.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span>Figma UI/UX</span>
+                        <span>PHP &amp; MySQL</span>
+                        <span>Sistem K3 PUSRI</span>
+                        <span>Barcode Scanner</span>
+                        <span>Digitalisasi TI</span>
+                    </div>
+                </div>
+
+                <!-- PENGALAMAN 2: PT PARAMA GLOBAL INSPIRA (PARAGON) -->
+                <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="exp-header">
+                        <div class="exp-title-group">
+                            <h3>Picker Warehouse &amp; Transporter Warehouse</h3>
+                            <div class="exp-company">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                                <span>PT Parama Global Inspira (PARAGON)</span>
+                            </div>
+                            <p class="exp-dept">Warehouse</p>
+                        </div>
+                        <div class="exp-badges">
+                            <span class="exp-badge-period">Oktober 2026</span>
+                            <span class="exp-badge-type">Freelance</span>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                    <li>Bertugas sebagai picker gudang: mengambil dan menyiapkan barang sesuai daftar pesanan, memeriksa jumlah dan kondisi produk sebelum dikirim.</li>
+                    <li>Bertugas sebagai transporter gudang: memindahkan barang dari area packing ke area pemuatan dan membantu menata barang packing ke kendaraan pengiriman.</li>
+                    <li>Menjaga kerapian dan kebersihan area gudang sesuai prosedur kerja.</li>
+                    </ul>
+                    <div class="exp-tags">
+                    <span>Picker Warehouse</span>
+                    <span>Transporter Warehouse</span>
+                    <span>Distribusi</span>
+                    </div>
+                </div>
+
+                <!-- PENGALAMAN 3: PARKSIDE HOTEL PALEMBANG -->
+                <div class="exp-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="exp-header">
+                        <div class="exp-title-group">
+                            <h3>Checker Inventory</h3>
+                            <div class="exp-company">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                                <span>Parkside's Hotel Palembang</span>
+                            </div>
+                            <p class="exp-dept">Divisi Inventory Warehouse</p>
+                        </div>
+                        <div class="exp-badges">
+                            <span class="exp-badge-period"> September 2026</span>
+                            <span class="exp-badge-type">Freelance</span>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                    <li>Menyusun barang sesuai dengan bentuk dan tempat yang sudah tersedia di gudang.</li>
+                    <li>Mencatat dan merekap data sisa stok gudang menggunakan Microsoft Excel.</li>
+                    </ul>
+                    <div class="exp-tags">
+                    <span>Checker Gudang</span>
+                    <span>Penataan Barang</span>
+                    <span>Manajemen Stok</span>
+                    <span>Pencatatan Data</span>
+                    <span>Microsoft Excel</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJEK SECTION -->
+        <section id="projek">
+            <h2 class="section-title" data-aos="fade-up">Project yang Pernah Dibuat</h2>
+            <div class="project-list">
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-meta">
+                        <div class="project-identity">
+                            <span class="project-num">01/</span>
+                            <h3 class="project-title">Aplikasi Konsultasi Akademik Mahasiswa Berbasis Website</h3>
+                        </div>
+                        <span class="project-type">Aplikasi Berbasis Web</span>
+                    </div>
+                    <p class="project-desc">Aplikasi berbasis website yang dirancang untuk mempermudah dan
+                        mendigitalisasi proses bimbingan akademik antara mahasiswa dan dosen pembimbing. Dilengkapi
+                        fitur pengajuan jadwal konsultasi mandiri, pencatatan logbook bimbingan, notifikasi status
+                        persetujuan, serta unggah dokumen tugas akhir/skripsi secara terorganisir.</p>
+                    <div class="project-tags">
+                        <span>PHP Native</span>
+                        <span>MySQL</span>
+                        <span>HTML5 &amp; CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="project-slider-wrapper">
+                        <button class="slider-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
+                        <div class="project-slider"
+                            data-images="uploads/projek1/foto1.png,uploads/projek1/foto2.png,uploads/projek1/foto3.png,uploads/projek1/foto4.png,uploads/projek1/foto5.png">
+                        </div>
+                        <button class="slider-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/faankzzz/KonsultasiMahasiswa" target="_blank"
+                            rel="noopener noreferrer" class="project-github-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                            <span>Repository GitHub</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-icon">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-meta">
+                        <div class="project-identity">
+                            <span class="project-num">02/</span>
+                            <h3 class="project-title">Aplikasi Penjualan dan Pengiriman Produk Berbasis Website pada PT
+                                Tirta Osmosis Sampurna (Alfa One) Palembang</h3>
+                        </div>
+                        <span class="project-type">Aplikasi Berbasis Web</span>
+                    </div>
+                    <p class="project-desc">Sistem informasi penjualan dan monitoring distribusi logistik produk air
+                        minum kemasan (Alfa One Palembang). Memfasilitasi transaksi pemesanan produk secara digital,
+                        alur penugasan kurir pengiriman barang ke pelanggan, otomatisasi cetak invoice / surat jalan,
+                        serta dashboard laporan rekapitulasi omzet penjualan harian dan bulanan secara terpusat.</p>
+                    <div class="project-tags">
+                        <span>PHP Native / Laravel</span>
+                        <span>MySQL</span>
+                        <span>Invoice Generator</span>
+                        <span>Manajemen Logistik</span>
+                        <span>Dashboard Admin</span>
+                    </div>
+                    <div class="project-slider-wrapper">
+                        <button class="slider-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
+                        <div class="project-slider"
+                            data-images="uploads/projek2/foto6.png,uploads/projek2/foto2.png,uploads/projek2/foto3.png,uploads/projek2/foto4.png,uploads/projek2/foto5.png">
+                        </div>
+                        <button class="slider-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/faankzzz/AplikasiLAFarhan" target="_blank" rel="noopener noreferrer"
+                            class="project-github-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                            <span>Repository GitHub</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-icon">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-meta">
+                        <div class="project-identity">
+                            <span class="project-num">02/</span>
+                            <h3 class="project-title">Sistem Pelaporan Insiden Kerja pada Dept K3 PT Pupuk Sriwidjaja Palembang</h3>
+                        </div>
+                        <span class="project-type">Aplikasi Berbasis Web</span>
+                    </div>
+                    <p class="project-desc">Sistem informasi pelaporan insiden kerja pada Departemen K3 PT Pupuk Sriwidjaja
+                        Palembang. Memfasilitasi pelaporan kejadian (near miss, kecelakaan kerja, kebakaran, hingga
+                        pencemaran lingkungan) secara digital, alur verifikasi dan penentuan tingkat keparahan oleh
+                        petugas K3, pencatatan hasil investigasi beserta tindakan korektif dan preventif, cetak laporan
+                        insiden, serta dashboard statistik insiden per bulan, unit kerja, dan jenis kejadian secara
+                        terpusat.</p>
+                    <div class="project-tags">
+                        <span>Laravel</span>
+                        <span>MySQL</span>
+                        <span>Manajemen Insiden K3</span>
+                        <span>Dashboard Statistik</span>
+                    </div>
+                    <div class="project-slider-wrapper">
+                        <button class="slider-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
+                        <div class="project-slider"
+                            data-images="uploads/projek5/foto1.png,uploads/projek5/foto2.png,uploads/projek5/foto3.png,uploads/projek5/foto4.png,uploads/projek5/foto5.png,uploads/projek5/foto6.png,uploads/projek5/foto7.png,uploads/projek5/foto8.png">
+                        </div>
+                        <button class="slider-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/faankzzz/PelaporanK3" target="_blank" rel="noopener noreferrer"
+                            class="project-github-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                            <span>Repository GitHub</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-icon">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-meta">
+                        <div class="project-identity">
+                            <span class="project-num">03/</span>
+                            <h3 class="project-title">Aplikasi Pengarsipan Surat Masuk dan Keluar Ormawa Polsri</h3>
+                        </div>
+                        <span class="project-type">Aplikasi Berbasis Web</span>
+                    </div>
+                    <p class="project-desc">Platform digitalisasi manajemen arsip dan korespondensi resmi untuk Himpunan
+                        Mahasiswa Jurusan (Ormawa) Politeknik Negeri Sriwijaya. Menggantikan proses manual dengan sistem
+                        penomoran surat otomatis, alur disposisi surat digital antar pimpinan/divisi, pengunggahan
+                        dokumen lampiran (PDF/Scan), serta fitur pencarian cepat berkas surat masuk dan surat keluar.
+                    </p>
+                    <div class="project-tags">
+                        <span>PHP Native</span>
+                        <span>MySQL</span>
+                        <span>Document Archiving</span>
+                        <span>Disposisi Digital</span>
+                        <span>Manajemen Hak Akses</span>
+                    </div>
+                    <div class="project-slider-wrapper">
+                        <button class="slider-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
+                        <div class="project-slider"
+                            data-images="uploads/projek3/foto1.png,uploads/projek3/foto2.png,uploads/projek3/foto3.png,uploads/projek3/foto4.png,uploads/projek3/foto5.png">
+                        </div>
+                        <button class="slider-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/faankzzz/Surat-Keluar-Masuk-Ormawa" target="_blank"
+                            rel="noopener noreferrer" class="project-github-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                            <span>Repository GitHub</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-icon">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-meta">
+                        <div class="project-identity">
+                            <span class="project-num">04/</span>
+                            <h3 class="project-title">Aplikasi Absensi Berbasis Lokasi pada PT PLN ULP Rivai Palembang
+                            </h3>
+                        </div>
+                        <span class="project-type">Aplikasi Berbasis Web</span>
+                    </div>
+                    <p class="project-desc">Aplikasi absensi pegawai digital yang mengintegrasikan validasi lokasi
+                        geografis (Geolocation GPS) dengan radius koordinat kantor PT PLN ULP Rivai Palembang. Berfungsi
+                        memastikan presensi kehadiran karyawan dilakukan tepat di area kerja (geofencing), mencatat
+                        waktu kedatangan/kepulangan secara akurat, serta menghasilkan rekapitulasi data absensi otomatis
+                        untuk monitoring HRD.</p>
+                    <div class="project-tags">
+                        <span>PHP Native</span>
+                        <span>Geolocation API</span>
+                        <span>MySQL</span>
+                        <span>Geofencing</span>
+                        <span>Rekap Presensi HRD</span>
+                    </div>
+                    <div class="project-slider-wrapper">
+                        <button class="slider-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
+                        <div class="project-slider"
+                            data-images="uploads/projek4/foto1.png,uploads/projek4/foto2.png,uploads/projek4/foto3.png,uploads/projek4/foto4.png,uploads/projek4/foto5.png">
+                        </div>
+                        <button class="slider-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/faankzzz/absensi-pln" target="_blank"
+                            rel="noopener noreferrer" class="project-github-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                            <span>Repository GitHub</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-icon">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- KEAHLIAN SECTION -->
+        <section id="keahlian">
+            <h2 class="section-title" data-aos="fade-up">Skill dan Keahlian</h2>
+            <div class="skills-grid">
+
+                <!-- HTML5 -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="skill-card-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 3h16l-1.5 17L12 22l-6.5-2L4 3z"></path>
+                            <path d="M7.5 7.5h9M8 11.5h8M8 11.5l.5 5 3.5 1 3.5-1 .5-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-card-title">HTML5</h3>
+                </div>
+
+                <!-- CSS3 -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="skill-card-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 3h16l-1.5 17L12 22l-6.5-2L4 3z"></path>
+                            <path d="M7 8h10l-1 5H8l.5 4.5 3.5 1 3.5-1 .3-3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-card-title">CSS3</h3>
+                </div>
+
+                <!-- PHP Native -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="skill-card-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="skill-card-title">PHP Native</h3>
+                </div>
+
+                <!-- Laravel -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="skill-card-title">Laravel</h3>
+                </div>
+
+                <!-- MySQL -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="skill-card-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-card-title">MySQL</h3>
+                </div>
+
+                <!-- Microsoft Office -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="skill-card-title">Microsoft Office</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- PENGALAMAN ORGANISASI & KEPANITIAAN -->
+        <section id="organisasi">
+            <h2 class="section-title" data-aos="fade-up">Pengalaman Organisasi &amp; Kepanitiaan</h2>
+            <div class="org-list">
+            <div class="org-subheading-wrap" data-aos="fade-up">
+                <h3 class="org-subheading">Organisasi</h3>
+                <div class="org-subheading-line"></div>
+            </div>
+
+                <div class="org-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="org-card-left">
+                        <span class="org-badge">2024 &ndash; 2025</span>
+                        <div class="org-icon">&#127963;</div>
+                    </div>
+                    <div class="org-card-right">
+                        <h3>Ketua Himpunan Mahasiswa Jurusan (HMJ)</h3>
+                        <p class="org-place">Politeknik Negeri Sriwijaya &mdash; Jurusan Manajemen Informatika </p>
+                        <p class="org-desc">Memimpin organisasi mahasiswa tingkat jurusan, mengkoordinasi kegiatan
+                            akademik dan non-akademik, serta menjembatani aspirasi mahasiswa kepada pihak jurusan.</p>
+                        <div class="org-tags">
+                            <span>Kepemimpinan</span>
+                            <span>Koordinasi</span>
+                            <span>Teamwork</span>
+                        </div>
+                        <div class="activity-slider-container">
+                            <div class="activity-slider-header">
+                                <span class="activity-slider-title">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                        <circle cx="8.5" cy="8.5" r="1.5" />
+                                        <polyline points="21 15 16 10 5 21" />
+                                    </svg>
+                                    Dokumentasi Kegiatan
+                                </span>
+                                <span class="activity-slider-hint">&#128065; Klik untuk perbesar</span>
+                            </div>
+                            <div class="activity-slider-wrapper">
+                                <button class="slider-btn prev" onclick="moveSlide(this, -1)"
+                                    aria-label="Foto sebelumnya">&#10094;</button>
+                                <div class="project-slider"
+                                    data-images="uploads/organisasi/hmj-ketua/foto2.jpg,uploads/organisasi/hmj-ketua/foto3.jpg,uploads/organisasi/hmj-ketua/foto4.jpg,uploads/organisasi/hmj-ketua/foto5.jpg,uploads/organisasi/hmj-ketua/foto6.jpg,uploads/organisasi/hmj-ketua/foto7.jpg">
+                                </div>
+                                <button class="slider-btn next" onclick="moveSlide(this, 1)"
+                                    aria-label="Foto selanjutnya">&#10095;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="org-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="org-card-left">
+                        <span class="org-badge">2023 &ndash; 2024</span>
+                        <div class="org-icon">&#128203;</div>
+                    </div>
+                        <div class="org-card-right">
+                            <h3>Staff PSDM Himpunan Mahasiswa Jurusan (HMJ)</h3>
+                            <p class="org-place">Politeknik Negeri Sriwijaya &mdash; Jurusan Manajemen Informatika</p>
+                            <p class="org-desc">Mendata dan mengelola informasi prestasi akademik maupun non-akademik
+                                mahasiswa.</p>
+                            <div class="org-tags">
+                        <span>Pendataan Prestasi</span>
+                         <span>Pengelolaan Data</span>
+                         <span>Pengembangan SDM</span>
+                        </div>
+                        <div class="activity-slider-container">
+                            <div class="activity-slider-header">
+                                <span class="activity-slider-title">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                        <circle cx="8.5" cy="8.5" r="1.5" />
+                                        <polyline points="21 15 16 10 5 21" />
+                                    </svg>
+                                    Dokumentasi Kegiatan
+                                </span>
+                                <span class="activity-slider-hint">&#128065; Klik untuk perbesar</span>
+                            </div>
+                            <div class="activity-slider-wrapper">
+                                <button class="slider-btn prev" onclick="moveSlide(this, -1)"
+                                    aria-label="Foto sebelumnya">&#10094;</button>
+                                <div class="project-slider"
+                                    data-images="uploads/organisasi/hmj-psdm/foto1.jpg,uploads/organisasi/hmj-psdm/foto5.jpg,uploads/organisasi/hmj-psdm/foto2.jpg,uploads/organisasi/hmj-psdm/foto3.jpg,uploads/organisasi/hmj-psdm/foto4.jpg,uploads/organisasi/hmj-psdm/foto6.jpg">
+                                </div>
+                                <button class="slider-btn next" onclick="moveSlide(this, 1)"
+                                    aria-label="Foto selanjutnya">&#10095;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUB-BAGIAN RELAWAN & KEPANITIAAN (3 KEGIATAN UTAMA) -->
+            <div class="org-subheading-wrap" data-aos="fade-up">
+                <h3 class="org-subheading">Kepanitiaan</h3>
+                <div class="org-subheading-line"></div>
+            </div>
+
+            <div class="volunteer-grid">
+
+                <!-- 1. Lomba Karya Tulis Ilmiah -->
+                <div class="volunteer-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="vol-slider-wrapper">
+                        <button class="slider-btn prev" onclick="moveSlide(this, -1)"
+                            aria-label="Foto sebelumnya">&#10094;</button>
+                        <div class="project-slider"
+                            data-images="uploads/kepanitiaan/Sc/foto1.jpg,uploads/kepanitiaan/Sc/foto2.jpg,uploads/kepanitiaan/Sc/foto3.jpg,uploads/kepanitiaan/Sc/foto4.jpg,uploads/kepanitiaan/Sc/foto5.jpg">
+                        </div>
+                        <button class="slider-btn next" onclick="moveSlide(this, 1)"
+                            aria-label="Foto selanjutnya">&#10095;</button>
+                    </div>
+                    <div class="vol-header">
+                        <span class="vol-icon">&#127942;</span>
+                        <span class="vol-year">2025</span>
+                    </div>
+                    <h3>Steering Committee/Penanggung Jawab seluruh Program Kerja Himpunan Mahasiswa Jurusan Manajemen Informatika</h3>
+                    <p class="vol-role">Steering Committee</p>
+                    <p class="vol-desc">Bertanggung jawab penuh atas arah dan keberhasilan seluruh program kerja HMJ Manajemen Informatika, mulai dari pembentukan panitia, pengawasan pelaksanaan, hingga evaluasi dan pertanggungjawaban akhir kegiatan.</p>
+                    <div class="vol-tags">
+                        <span>Teamwork</span><span>Komunikasi</span>
+                    </div>
+                </div>
+
+                <!-- 2. Program Kerja Utama / IT Festival -->
+                <div class="volunteer-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="vol-slider-wrapper">
+                        <button class="slider-btn prev" onclick="moveSlide(this, -1)"
+                            aria-label="Foto sebelumnya">&#10094;</button>
+                        <div class="project-slider"
+                            data-images="uploads/kepanitiaan/Perlengkapan/foto1.jpg,uploads/kepanitiaan/Perlengkapan/foto2.jpg,uploads/kepanitiaan/Perlengkapan/foto3.jpg,uploads/kepanitiaan/Perlengkapan/foto4.jpg">
+                        </div>
+                        <button class="slider-btn next" onclick="moveSlide(this, 1)"
+                            aria-label="Foto selanjutnya">&#10095;</button>
+                    </div>
+                    <div class="vol-header">
+                        <span class="vol-icon">&#127891;</span>
+                        <span class="vol-year">2024</span>
+                    </div>
+                    <h3>Panitia Program Kerja Utama Himpunan Mahasiswa Jurusan Manajemen Informatika</h3>
+                    <p class="vol-role">Divisi Perlengkapan</p>
+                    <p class="vol-desc">Membantu koordinator perlengkapan dalam merencanakan, mengadakan, dan mengawasi seluruh kebutuhan perlengkapan demi kelancaran rangkaian program kerja utama Himpunan Mahasiswa Jurusan Manajemen Informatika IT FESTIVAL 2024.</p>
+                    <div class="vol-tags">
+                        <span>Event Organizer</span><span>Koordinasi</span><span>Teamwork</span>
+                    </div>
+                </div>
+
+                <!-- 3. Seminar Nasional IT -->
+                <div class="volunteer-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="vol-slider-wrapper">
+                        <button class="slider-btn prev" onclick="moveSlide(this, -1)"
+                            aria-label="Foto sebelumnya">&#10094;</button>
+                        <div class="project-slider"
+                            data-images="uploads/kepanitiaan/Volunteer/foto1.jpg,uploads/kepanitiaan/Volunteer/foto2.jpg,uploads/kepanitiaan/Volunteer/foto3.jpg,uploads/kepanitiaan/Volunteer/foto4.jpg">
+                        </div>
+                        <button class="slider-btn next" onclick="moveSlide(this, 1)"
+                            aria-label="Foto selanjutnya">&#10095;</button>
+                    </div>
+                    <div class="vol-header">
+                        <span class="vol-icon">&#127807;</span>
+                        <span class="vol-year">2023</span>
+                    </div>
+                    <h3>Relawan VFEXTION BEM Polsri 2023</h3>
+                    <p class="vol-role">Relawan Bakti Lingkungan</p>
+                    <p class="vol-desc">Terlibat langsung dalam aksi bersih-bersih lingkungan dan sungai di sekitar kampus Politeknik Negeri Sriwijaya, mulai dari mengumpulkan dan memilah sampah hingga mengajak masyarakat sekitar menjaga kebersihan lingkungan.</p>
+                    <div class="vol-tags">
+                        <span>Peduli Lingkungan</span><span>Kerjasama Tim</span>    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOKUMENTASI LAINNYA (INFINITE FADING MARQUEE) -->
+        <section id="dokumentasi">
+            <h2 class="section-title" data-aos="fade-up">Rangkuman Dokumentasi</h2>
+            <div class="marquee-wrapper" data-aos="fade-up">
+                <div class="marquee-track">
+                    <!-- Set 1: Foto Dokumentasi Gabungan (Organisasi, Kepanitiaan, & Dokumentasi) -->
+                    <div class="marquee-item" onclick="openLightbox('uploads/dokumentasi/foto1.jpeg', 'Dokumentasi Aktivitas &amp; Kegiatan')">
+                        <img src="uploads/dokumentasi/foto1.jpeg" alt="Dokumentasi Aktivitas &amp; Kegiatan" loading="lazy" onerror="handleSlideImgError(this, 'uploads/dokumentasi/foto1.jpeg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-ketua/foto6.jpg', 'Ketua HMJ - Dokumentasi Pengurus HMJ')">
+                        <img src="uploads/organisasi/hmj-ketua/foto6.jpg" alt="Ketua HMJ - Dokumentasi Pengurus HMJ" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-ketua/foto6.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Sc/foto2.jpg', 'Steering Committee - Rapat Koordinasi Panitia')">
+                        <img src="uploads/kepanitiaan/Sc/foto2.jpg" alt="Steering Committee - Rapat Koordinasi Panitia" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Sc/foto2.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-psdm/foto3.jpg', 'PSDM HMJ - Pembinaan Organisasi')">
+                        <img src="uploads/organisasi/hmj-psdm/foto3.jpg" alt="PSDM HMJ - Pembinaan Organisasi" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-psdm/foto3.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Perlengkapan/foto1.jpg', 'Divisi Perlengkapan - Persiapan IT Festival')">
+                        <img src="uploads/kepanitiaan/Perlengkapan/foto1.jpg" alt="Divisi Perlengkapan - Persiapan IT Festival" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Perlengkapan/foto1.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/dokumentasi/foto2.jpeg', 'Dokumentasi Aktivitas Mahasiswa')">
+                        <img src="uploads/dokumentasi/foto2.jpeg" alt="Dokumentasi Aktivitas Mahasiswa" loading="lazy" onerror="handleSlideImgError(this, 'uploads/dokumentasi/foto2.jpeg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Volunteer/foto4.jpg', 'Relawan VFEXTION - Dokumentasi Bersama Relawan')">
+                        <img src="uploads/kepanitiaan/Volunteer/foto4.jpg" alt="Relawan VFEXTION - Dokumentasi Bersama Relawan" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Volunteer/foto4.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-ketua/foto3.jpg', 'Ketua HMJ - Diskusi &amp; Evaluasi Program')">
+                        <img src="uploads/organisasi/hmj-ketua/foto3.jpg" alt="Ketua HMJ - Diskusi &amp; Evaluasi Program" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-ketua/foto3.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Sc/foto5.jpg', 'Steering Committee - Dokumentasi Panitia Acara')">
+                        <img src="uploads/kepanitiaan/Sc/foto5.jpg" alt="Steering Committee - Dokumentasi Panitia Acara" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Sc/foto5.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-psdm/foto1.jpg', 'PSDM HMJ - Rapat Evaluasi Anggota')">
+                        <img src="uploads/organisasi/hmj-psdm/foto1.jpg" alt="PSDM HMJ - Rapat Evaluasi Anggota" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-psdm/foto1.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/dokumentasi/foto3.jpeg', 'Dokumentasi Kegiatan &amp; Kolaborasi')">
+                        <img src="uploads/dokumentasi/foto3.jpeg" alt="Dokumentasi Kegiatan &amp; Kolaborasi" loading="lazy" onerror="handleSlideImgError(this, 'uploads/dokumentasi/foto3.jpeg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Perlengkapan/foto3.jpg', 'Divisi Perlengkapan - Gladi Bersih &amp; Setup Panggung')">
+                        <img src="uploads/kepanitiaan/Perlengkapan/foto3.jpg" alt="Divisi Perlengkapan - Gladi Bersih &amp; Setup Panggung" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Perlengkapan/foto3.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-ketua/foto1.jpg', 'Ketua HMJ - Sambutan &amp; Koordinasi Organisasi')">
+                        <img src="uploads/organisasi/hmj-ketua/foto1.jpg" alt="Ketua HMJ - Sambutan &amp; Koordinasi Organisasi" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-ketua/foto1.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Volunteer/foto1.jpg', 'Relawan VFEXTION - Aksi Bersih Lingkungan')">
+                        <img src="uploads/kepanitiaan/Volunteer/foto1.jpg" alt="Relawan VFEXTION - Aksi Bersih Lingkungan" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Volunteer/foto1.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-psdm/foto5.jpg', 'PSDM HMJ - Pendataan &amp; Monitoring Prestasi')">
+                        <img src="uploads/organisasi/hmj-psdm/foto5.jpg" alt="PSDM HMJ - Pendataan &amp; Monitoring Prestasi" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-psdm/foto5.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/dokumentasi/foto4.jpeg', 'Dokumentasi Program Kerja Mahasiswa')">
+                        <img src="uploads/dokumentasi/foto4.jpeg" alt="Dokumentasi Program Kerja Mahasiswa" loading="lazy" onerror="handleSlideImgError(this, 'uploads/dokumentasi/foto4.jpeg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Sc/foto1.jpg', 'Steering Committee - Pengawasan &amp; Arahan Proker')">
+                        <img src="uploads/kepanitiaan/Sc/foto1.jpg" alt="Steering Committee - Pengawasan &amp; Arahan Proker" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Sc/foto1.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-ketua/foto4.jpg', 'Ketua HMJ - Presentasi Program Kerja')">
+                        <img src="uploads/organisasi/hmj-ketua/foto4.jpg" alt="Ketua HMJ - Presentasi Program Kerja" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-ketua/foto4.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Perlengkapan/foto2.jpg', 'Divisi Perlengkapan - Pengecekan &amp; Setting Alat')">
+                        <img src="uploads/kepanitiaan/Perlengkapan/foto2.jpg" alt="Divisi Perlengkapan - Pengecekan &amp; Setting Alat" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Perlengkapan/foto2.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/dokumentasi/foto5.jpeg', 'Dokumentasi Kebersamaan Tim')">
+                        <img src="uploads/dokumentasi/foto5.jpeg" alt="Dokumentasi Kebersamaan Tim" loading="lazy" onerror="handleSlideImgError(this, 'uploads/dokumentasi/foto5.jpeg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-psdm/foto2.jpg', 'PSDM HMJ - Koordinasi Pengembangan SDM')">
+                        <img src="uploads/organisasi/hmj-psdm/foto2.jpg" alt="PSDM HMJ - Koordinasi Pengembangan SDM" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-psdm/foto2.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Volunteer/foto2.jpg', 'Relawan VFEXTION - Pemilahan &amp; Pengumpulan Sampah')">
+                        <img src="uploads/kepanitiaan/Volunteer/foto2.jpg" alt="Relawan VFEXTION - Pemilahan &amp; Pengumpulan Sampah" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Volunteer/foto2.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-ketua/foto7.jpg', 'Ketua HMJ - Kebersamaan Pengurus HMJ MI')">
+                        <img src="uploads/organisasi/hmj-ketua/foto7.jpg" alt="Ketua HMJ - Kebersamaan Pengurus HMJ MI" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-ketua/foto7.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Sc/foto4.jpg', 'Steering Committee - Technical Meeting Kegiatan')">
+                        <img src="uploads/kepanitiaan/Sc/foto4.jpg" alt="Steering Committee - Technical Meeting Kegiatan" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Sc/foto4.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-psdm/foto6.jpg', 'PSDM HMJ - Temu Anggota &amp; Team Building')">
+                        <img src="uploads/organisasi/hmj-psdm/foto6.jpg" alt="PSDM HMJ - Temu Anggota &amp; Team Building" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-psdm/foto6.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Perlengkapan/foto4.jpg', 'Divisi Perlengkapan - Koordinasi Lapangan')">
+                        <img src="uploads/kepanitiaan/Perlengkapan/foto4.jpg" alt="Divisi Perlengkapan - Koordinasi Lapangan" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Perlengkapan/foto4.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/dokumentasi/foto6.jpeg', 'Dokumentasi Forum &amp; Diskusi')">
+                        <img src="uploads/dokumentasi/foto6.jpeg" alt="Dokumentasi Forum &amp; Diskusi" loading="lazy" onerror="handleSlideImgError(this, 'uploads/dokumentasi/foto6.jpeg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-ketua/foto2.jpg', 'Ketua HMJ - Rapat Kerja Pengurus')">
+                        <img src="uploads/organisasi/hmj-ketua/foto2.jpg" alt="Ketua HMJ - Rapat Kerja Pengurus" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-ketua/foto2.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Volunteer/foto3.jpg', 'Relawan VFEXTION - Edukasi Peduli Lingkungan')">
+                        <img src="uploads/kepanitiaan/Volunteer/foto3.jpg" alt="Relawan VFEXTION - Edukasi Peduli Lingkungan" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Volunteer/foto3.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-psdm/foto4.jpg', 'PSDM HMJ - Forum Diskusi Mahasiswa')">
+                        <img src="uploads/organisasi/hmj-psdm/foto4.jpg" alt="PSDM HMJ - Forum Diskusi Mahasiswa" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-psdm/foto4.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Sc/foto3.jpg', 'Steering Committee - Evaluasi Progres Acara')">
+                        <img src="uploads/kepanitiaan/Sc/foto3.jpg" alt="Steering Committee - Evaluasi Progres Acara" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Sc/foto3.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-ketua/foto5.jpg', 'Ketua HMJ - Forum Mahasiswa')">
+                        <img src="uploads/organisasi/hmj-ketua/foto5.jpg" alt="Ketua HMJ - Forum Mahasiswa" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-ketua/foto5.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+
+                    <!-- Duplikasi Set untuk Efek Bergerak Mulus Tanpa Putus (Infinite Loop) -->
+                    <div class="marquee-item" onclick="openLightbox('uploads/dokumentasi/foto1.jpeg', 'Dokumentasi Aktivitas &amp; Kegiatan')">
+                        <img src="uploads/dokumentasi/foto1.jpeg" alt="Dokumentasi Aktivitas &amp; Kegiatan" loading="lazy" onerror="handleSlideImgError(this, 'uploads/dokumentasi/foto1.jpeg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-ketua/foto6.jpg', 'Ketua HMJ - Dokumentasi Pengurus HMJ')">
+                        <img src="uploads/organisasi/hmj-ketua/foto6.jpg" alt="Ketua HMJ - Dokumentasi Pengurus HMJ" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-ketua/foto6.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Sc/foto2.jpg', 'Steering Committee - Rapat Koordinasi Panitia')">
+                        <img src="uploads/kepanitiaan/Sc/foto2.jpg" alt="Steering Committee - Rapat Koordinasi Panitia" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Sc/foto2.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-psdm/foto3.jpg', 'PSDM HMJ - Pembinaan Organisasi')">
+                        <img src="uploads/organisasi/hmj-psdm/foto3.jpg" alt="PSDM HMJ - Pembinaan Organisasi" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-psdm/foto3.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Perlengkapan/foto1.jpg', 'Divisi Perlengkapan - Persiapan IT Festival')">
+                        <img src="uploads/kepanitiaan/Perlengkapan/foto1.jpg" alt="Divisi Perlengkapan - Persiapan IT Festival" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Perlengkapan/foto1.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/dokumentasi/foto2.jpeg', 'Dokumentasi Aktivitas Mahasiswa')">
+                        <img src="uploads/dokumentasi/foto2.jpeg" alt="Dokumentasi Aktivitas Mahasiswa" loading="lazy" onerror="handleSlideImgError(this, 'uploads/dokumentasi/foto2.jpeg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Volunteer/foto4.jpg', 'Relawan VFEXTION - Dokumentasi Bersama Relawan')">
+                        <img src="uploads/kepanitiaan/Volunteer/foto4.jpg" alt="Relawan VFEXTION - Dokumentasi Bersama Relawan" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Volunteer/foto4.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-ketua/foto3.jpg', 'Ketua HMJ - Diskusi &amp; Evaluasi Program')">
+                        <img src="uploads/organisasi/hmj-ketua/foto3.jpg" alt="Ketua HMJ - Diskusi &amp; Evaluasi Program" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-ketua/foto3.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Sc/foto5.jpg', 'Steering Committee - Dokumentasi Panitia Acara')">
+                        <img src="uploads/kepanitiaan/Sc/foto5.jpg" alt="Steering Committee - Dokumentasi Panitia Acara" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Sc/foto5.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-psdm/foto1.jpg', 'PSDM HMJ - Rapat Evaluasi Anggota')">
+                        <img src="uploads/organisasi/hmj-psdm/foto1.jpg" alt="PSDM HMJ - Rapat Evaluasi Anggota" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-psdm/foto1.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/dokumentasi/foto3.jpeg', 'Dokumentasi Kegiatan &amp; Kolaborasi')">
+                        <img src="uploads/dokumentasi/foto3.jpeg" alt="Dokumentasi Kegiatan &amp; Kolaborasi" loading="lazy" onerror="handleSlideImgError(this, 'uploads/dokumentasi/foto3.jpeg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Perlengkapan/foto3.jpg', 'Divisi Perlengkapan - Gladi Bersih &amp; Setup Panggung')">
+                        <img src="uploads/kepanitiaan/Perlengkapan/foto3.jpg" alt="Divisi Perlengkapan - Gladi Bersih &amp; Setup Panggung" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Perlengkapan/foto3.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-ketua/foto1.jpg', 'Ketua HMJ - Sambutan &amp; Koordinasi Organisasi')">
+                        <img src="uploads/organisasi/hmj-ketua/foto1.jpg" alt="Ketua HMJ - Sambutan &amp; Koordinasi Organisasi" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-ketua/foto1.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Volunteer/foto1.jpg', 'Relawan VFEXTION - Aksi Bersih Lingkungan')">
+                        <img src="uploads/kepanitiaan/Volunteer/foto1.jpg" alt="Relawan VFEXTION - Aksi Bersih Lingkungan" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Volunteer/foto1.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-psdm/foto5.jpg', 'PSDM HMJ - Pendataan &amp; Monitoring Prestasi')">
+                        <img src="uploads/organisasi/hmj-psdm/foto5.jpg" alt="PSDM HMJ - Pendataan &amp; Monitoring Prestasi" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-psdm/foto5.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/dokumentasi/foto4.jpeg', 'Dokumentasi Program Kerja Mahasiswa')">
+                        <img src="uploads/dokumentasi/foto4.jpeg" alt="Dokumentasi Program Kerja Mahasiswa" loading="lazy" onerror="handleSlideImgError(this, 'uploads/dokumentasi/foto4.jpeg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Sc/foto1.jpg', 'Steering Committee - Pengawasan &amp; Arahan Proker')">
+                        <img src="uploads/kepanitiaan/Sc/foto1.jpg" alt="Steering Committee - Pengawasan &amp; Arahan Proker" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Sc/foto1.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-ketua/foto4.jpg', 'Ketua HMJ - Presentasi Program Kerja')">
+                        <img src="uploads/organisasi/hmj-ketua/foto4.jpg" alt="Ketua HMJ - Presentasi Program Kerja" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-ketua/foto4.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Perlengkapan/foto2.jpg', 'Divisi Perlengkapan - Pengecekan &amp; Setting Alat')">
+                        <img src="uploads/kepanitiaan/Perlengkapan/foto2.jpg" alt="Divisi Perlengkapan - Pengecekan &amp; Setting Alat" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Perlengkapan/foto2.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/dokumentasi/foto5.jpeg', 'Dokumentasi Kebersamaan Tim')">
+                        <img src="uploads/dokumentasi/foto5.jpeg" alt="Dokumentasi Kebersamaan Tim" loading="lazy" onerror="handleSlideImgError(this, 'uploads/dokumentasi/foto5.jpeg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-psdm/foto2.jpg', 'PSDM HMJ - Koordinasi Pengembangan SDM')">
+                        <img src="uploads/organisasi/hmj-psdm/foto2.jpg" alt="PSDM HMJ - Koordinasi Pengembangan SDM" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-psdm/foto2.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Volunteer/foto2.jpg', 'Relawan VFEXTION - Pemilahan &amp; Pengumpulan Sampah')">
+                        <img src="uploads/kepanitiaan/Volunteer/foto2.jpg" alt="Relawan VFEXTION - Pemilahan &amp; Pengumpulan Sampah" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Volunteer/foto2.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-ketua/foto7.jpg', 'Ketua HMJ - Kebersamaan Pengurus HMJ MI')">
+                        <img src="uploads/organisasi/hmj-ketua/foto7.jpg" alt="Ketua HMJ - Kebersamaan Pengurus HMJ MI" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-ketua/foto7.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Sc/foto4.jpg', 'Steering Committee - Technical Meeting Kegiatan')">
+                        <img src="uploads/kepanitiaan/Sc/foto4.jpg" alt="Steering Committee - Technical Meeting Kegiatan" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Sc/foto4.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-psdm/foto6.jpg', 'PSDM HMJ - Temu Anggota &amp; Team Building')">
+                        <img src="uploads/organisasi/hmj-psdm/foto6.jpg" alt="PSDM HMJ - Temu Anggota &amp; Team Building" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-psdm/foto6.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Perlengkapan/foto4.jpg', 'Divisi Perlengkapan - Koordinasi Lapangan')">
+                        <img src="uploads/kepanitiaan/Perlengkapan/foto4.jpg" alt="Divisi Perlengkapan - Koordinasi Lapangan" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Perlengkapan/foto4.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/dokumentasi/foto6.jpeg', 'Dokumentasi Forum &amp; Diskusi')">
+                        <img src="uploads/dokumentasi/foto6.jpeg" alt="Dokumentasi Forum &amp; Diskusi" loading="lazy" onerror="handleSlideImgError(this, 'uploads/dokumentasi/foto6.jpeg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-ketua/foto2.jpg', 'Ketua HMJ - Rapat Kerja Pengurus')">
+                        <img src="uploads/organisasi/hmj-ketua/foto2.jpg" alt="Ketua HMJ - Rapat Kerja Pengurus" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-ketua/foto2.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Volunteer/foto3.jpg', 'Relawan VFEXTION - Edukasi Peduli Lingkungan')">
+                        <img src="uploads/kepanitiaan/Volunteer/foto3.jpg" alt="Relawan VFEXTION - Edukasi Peduli Lingkungan" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Volunteer/foto3.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-psdm/foto4.jpg', 'PSDM HMJ - Forum Diskusi Mahasiswa')">
+                        <img src="uploads/organisasi/hmj-psdm/foto4.jpg" alt="PSDM HMJ - Forum Diskusi Mahasiswa" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-psdm/foto4.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/kepanitiaan/Sc/foto3.jpg', 'Steering Committee - Evaluasi Progres Acara')">
+                        <img src="uploads/kepanitiaan/Sc/foto3.jpg" alt="Steering Committee - Evaluasi Progres Acara" loading="lazy" onerror="handleSlideImgError(this, 'uploads/kepanitiaan/Sc/foto3.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                    <div class="marquee-item" onclick="openLightbox('uploads/organisasi/hmj-ketua/foto5.jpg', 'Ketua HMJ - Forum Mahasiswa')">
+                        <img src="uploads/organisasi/hmj-ketua/foto5.jpg" alt="Ketua HMJ - Forum Mahasiswa" loading="lazy" onerror="handleSlideImgError(this, 'uploads/organisasi/hmj-ketua/foto5.jpg')">
+                        <div class="marquee-overlay"><span>&#128065; Perbesar</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER / KONTAK -->
+        <footer id="kontak" data-aos="fade-up">
+            <div class="contact-container">
+                <p class="edu-subtitle" style="margin-bottom: 8px;">GET IN TOUCH</p>
+                <p class="footer-headline">Tertarik membangun projek bersama atau merekrut saya?</p>
+                <p style="color: #94a3b8; font-size: 15px; margin-bottom: 24px; font-weight: 300;">
+                    Saya terbuka untuk kesempatan kerja Full-time, Kontrak, maupun Freelance di bidang Web Development
+                    dan Administrasi Perkantoran. Hubungi saya langsung melalui WhatsApp atau Email di bawah ini:
+                </p>
+
+                <!-- CONTACT CARDS (WHATSAPP & EMAIL) -->
+                <div class="contact-cards-wrap">
+                    <a href="https://wa.me/6281277058901?text=Halo%20Farhan,%20saya%20melihat%20portofolio%20Anda%20dan%20tertarik%20untuk%20berdiskusi"
+                        target="_blank" rel="noopener noreferrer" class="contact-card-btn wa-card" id="contact-wa">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="#25d366">
+                            <path
+                                d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.84-1.56 1.56-3.64 2.42-5.84 2.42-1.49 0-2.95-.4-4.23-1.16l-.3-.18-3.13.82.84-3.05-.2-.31a8.18 8.18 0 01-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.01 2.58c.13.17 1.75 2.67 4.24 3.75.59.26 1.05.41 1.41.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z" />
+                        </svg>
+                        <div class="contact-card-text">
+                            <span class="contact-card-label">Hubungi Saya melalui WhatsApp </span>
+                            <span class="contact-card-value">081277058901</span>
+                        </div>
+                    </a>
+
+                    <a href="mailto:pratamapaan@gmail.com" class="contact-card-btn email-card" id="contact-email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <div class="contact-card-text">
+                            <span class="contact-card-label">Kirim Pesan melalui Email</span>
+                            <span class="contact-card-value">pratamapaan@gmail.com</span>
+                        </div>
+                    </a>
+                </div>
+
+                <ul class="social-links">
+                    <li><a href="https://wa.me/6281277058901" target="_blank" rel="noopener noreferrer"
+                            id="link-wa">&#128172; WhatsApp</a></li>
+                    <li><a href="mailto:pratamapaan@gmail.com" id="link-email-sub">&#9993; Email</a></li>
+                    <li><a href="https://www.linkedin.com/in/m-farhan-pratama-a20a59385" target="_blank"
+                            rel="noopener noreferrer" id="link-linkedin">LinkedIn</a></li>
+                    <li><a href="https://github.com/faankzzz" target="_blank" rel="noopener noreferrer"
+                            id="link-github">GitHub</a></li>
+                </ul>
+
+                <div class="footer-divider"></div>
+                <p class="copyright">&copy; 2026 Hak Cipta Dilindungi &mdash; M Farhan Pratama</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- LIGHTBOX PREVIEW MODAL -->
+    <div id="lightboxModal" class="lightbox-modal" onclick="closeLightbox(event)">
+        <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Tutup preview">&times;</button>
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <img id="lightboxImg" src="" alt="Preview Dokumentasi">
+            <p id="lightboxCaption" class="lightbox-caption"></p>
+        </div>
+    </div>
+
+
+    <script>
+        // ANIMASI SCROLL — pengganti AOS yang ringan
+        // Satu observer untuk SEMUA elemen data-aos
+        const aosObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('aos-visible');
+                    aosObserver.unobserve(entry.target); // fire once
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('[data-aos]').forEach(el => aosObserver.observe(el));
+
+        // SIDEBAR MOBILE
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarClose = document.getElementById('sidebarClose');
+        const overlay = document.getElementById('sidebarOverlay');
+
+        function openSidebar() {
+            updateActiveSpy();
+            sidebar.classList.add('open');
+            overlay.classList.add('active');
+            document.body.classList.add('sidebar-open');
+            menuToggle.classList.add('active');
+
+            const activeSidebarLink = sidebar.querySelector('.sidebar-link.active');
+            if (activeSidebarLink) {
+                activeSidebarLink.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+            }
+        }
+        function closeSidebar() {
+            sidebar.classList.remove('open');
+            overlay.classList.remove('active');
+            document.body.classList.remove('sidebar-open');
+            menuToggle.classList.remove('active');
+        }
+
+        menuToggle.addEventListener('click', openSidebar);
+        sidebarClose.addEventListener('click', closeSidebar);
+        overlay.addEventListener('click', closeSidebar);
+        document.querySelectorAll('.sidebar-link').forEach(link => {
+            link.addEventListener('click', closeSidebar);
+        });
+
+        // ACTIVE STATE SCROLL SPY
+        const sections = document.querySelectorAll('section[id], footer[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+        let isManualScroll = false;
+        let manualScrollTimer = null;
+
+        function setActiveLink(sectionId) {
+            if (!sectionId) return;
+            navLinks.forEach(l => l.classList.toggle('active', l.dataset.section === sectionId));
+            sidebarLinks.forEach(l => l.classList.toggle('active', l.dataset.section === sectionId));
+        }
+
+        [...navLinks, ...sidebarLinks].forEach(link => {
+            link.addEventListener('click', function () {
+                const targetId = this.dataset.section;
+                if (!targetId) return;
+                setActiveLink(targetId);
+
+                // Kunci scroll spy sebentar selama animasi smooth scroll berlangsung
+                isManualScroll = true;
+                clearTimeout(manualScrollTimer);
+                manualScrollTimer = setTimeout(() => {
+                    isManualScroll = false;
+                    updateActiveSpy();
+                }, 800);
+            });
+        });
+
+        // Batalkan manual lock jika user menggerakkan mouse wheel atau swipe sentuh
+        window.addEventListener('wheel', () => { isManualScroll = false; }, { passive: true });
+        window.addEventListener('touchstart', () => { isManualScroll = false; }, { passive: true });
+
+        function updateActiveSpy() {
+            if (isManualScroll) return;
+
+            const scrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+            const windowHeight = window.innerHeight;
+            const docHeight = document.documentElement.scrollHeight;
+
+            // 1. Jika masih berada di bagian paling atas halaman (hero / beranda)
+            if (scrollY < 80) {
+                setActiveLink('hero');
+                return;
+            }
+
+            // 2. Deteksi section aktif berdasarkan posisi di viewport
+            // Offset 140px di bawah navbar melayang (~65px) untuk titik fokus pandangan
+            const probeY = 140;
+            let currentId = '';
+
+            for (let i = 0; i < sections.length; i++) {
+                const sec = sections[i];
+                const rect = sec.getBoundingClientRect();
+                if (rect.top <= probeY && rect.bottom > probeY) {
+                    currentId = sec.id;
+                    break;
+                }
+            }
+
+            // 3. Khusus footer/kontak saat halaman sudah di-scroll mentok ke paling bawah
+            const atBottom = (windowHeight + scrollY >= docHeight - 25);
+            const kontakEl = document.getElementById('kontak');
+            if (atBottom && kontakEl) {
+                const kontakRect = kontakEl.getBoundingClientRect();
+                if (kontakRect.top < windowHeight * 0.65) {
+                    currentId = 'kontak';
+                }
+            }
+
+            // Fallback jika berada di batas persis antar section
+            if (!currentId) {
+                for (let i = sections.length - 1; i >= 0; i--) {
+                    const sec = sections[i];
+                    if (sec.getBoundingClientRect().top <= probeY) {
+                        currentId = sec.id;
+                        break;
+                    }
+                }
+            }
+
+            if (currentId) {
+                setActiveLink(currentId);
+            }
+        }
+
+        let spyTicking = false;
+        function onScrollSpy() {
+            if (!spyTicking) {
+                window.requestAnimationFrame(() => {
+                    updateActiveSpy();
+                    spyTicking = false;
+                });
+                spyTicking = true;
+            }
+        }
+
+        window.addEventListener('scroll', onScrollSpy, { passive: true });
+        window.addEventListener('resize', updateActiveSpy, { passive: true });
+        updateActiveSpy();
+
+        // SLIDER DOKUMENTASI (PROJEK, ORGANISASI & KEPANITIAAN)
+        function handleSlideImgError(img, path) {
+            const slide = img.closest('.project-slide') || img.closest('.marquee-item');
+            if (!slide) return;
+            const filename = path.split('/').pop();
+            slide.innerHTML = `
+                <div class="slide-placeholder" title="Silakan upload foto ke: ${path}">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                        <polyline points="21 15 16 10 5 21"/>
+                    </svg>
+                    <span class="placeholder-text">Foto Belum Diunggah</span>
+                    <span class="placeholder-hint">Letakkan foto di:<br><code>${path}</code></span>
+                </div>
+            `;
+        }
+
+        // POOL FOTO DOKUMENTASI LENGKAP: Organisasi, Kepanitiaan, & Uploads Dokumentasi
+        const dokumentasiList = [
+            // Uploads Dokumentasi
+            { src: 'uploads/dokumentasi/foto1.jpeg', title: 'Dokumentasi Aktivitas & Kegiatan' },
+            { src: 'uploads/dokumentasi/foto2.jpeg', title: 'Dokumentasi Aktivitas Mahasiswa' },
+            { src: 'uploads/dokumentasi/foto3.jpeg', title: 'Dokumentasi Kegiatan & Kolaborasi' },
+            { src: 'uploads/dokumentasi/foto4.jpeg', title: 'Dokumentasi Program Kerja' },
+            { src: 'uploads/dokumentasi/foto5.jpeg', title: 'Dokumentasi Kebersamaan Tim' },
+            { src: 'uploads/dokumentasi/foto6.jpeg', title: 'Dokumentasi Forum & Diskusi' },
+
+            // Organisasi - Ketua HMJ
+            { src: 'uploads/organisasi/hmj-ketua/foto1.jpg', title: 'Ketua HMJ - Sambutan & Koordinasi Organisasi' },
+            { src: 'uploads/organisasi/hmj-ketua/foto2.jpg', title: 'Ketua HMJ - Rapat Kerja Pengurus' },
+            { src: 'uploads/organisasi/hmj-ketua/foto3.jpg', title: 'Ketua HMJ - Diskusi & Evaluasi Program' },
+            { src: 'uploads/organisasi/hmj-ketua/foto4.jpg', title: 'Ketua HMJ - Presentasi Program Kerja' },
+            { src: 'uploads/organisasi/hmj-ketua/foto5.jpg', title: 'Ketua HMJ - Forum Diskusi Mahasiswa' },
+            { src: 'uploads/organisasi/hmj-ketua/foto6.jpg', title: 'Ketua HMJ - Dokumentasi Pengurus HMJ' },
+            { src: 'uploads/organisasi/hmj-ketua/foto7.jpg', title: 'Ketua HMJ - Kebersamaan Pengurus HMJ MI' },
+
+            // Organisasi - PSDM HMJ
+            { src: 'uploads/organisasi/hmj-psdm/foto1.jpg', title: 'PSDM HMJ - Rapat Evaluasi Anggota' },
+            { src: 'uploads/organisasi/hmj-psdm/foto2.jpg', title: 'PSDM HMJ - Koordinasi Pengembangan SDM' },
+            { src: 'uploads/organisasi/hmj-psdm/foto3.jpg', title: 'PSDM HMJ - Pembinaan Organisasi' },
+            { src: 'uploads/organisasi/hmj-psdm/foto4.jpg', title: 'PSDM HMJ - Forum Diskusi Mahasiswa' },
+            { src: 'uploads/organisasi/hmj-psdm/foto5.jpg', title: 'PSDM HMJ - Pendataan & Monitoring Prestasi' },
+            { src: 'uploads/organisasi/hmj-psdm/foto6.jpg', title: 'PSDM HMJ - Temu Anggota & Team Building' },
+
+            // Kepanitiaan - SC
+            { src: 'uploads/kepanitiaan/Sc/foto1.jpg', title: 'Steering Committee - Pengawasan & Arahan Proker' },
+            { src: 'uploads/kepanitiaan/Sc/foto2.jpg', title: 'Steering Committee - Rapat Koordinasi Panitia' },
+            { src: 'uploads/kepanitiaan/Sc/foto3.jpg', title: 'Steering Committee - Evaluasi Progres Acara' },
+            { src: 'uploads/kepanitiaan/Sc/foto4.jpg', title: 'Steering Committee - Technical Meeting Kegiatan' },
+            { src: 'uploads/kepanitiaan/Sc/foto5.jpg', title: 'Steering Committee - Dokumentasi Panitia Acara' },
+
+            // Kepanitiaan - Perlengkapan
+            { src: 'uploads/kepanitiaan/Perlengkapan/foto1.jpg', title: 'Divisi Perlengkapan - Persiapan IT Festival' },
+            { src: 'uploads/kepanitiaan/Perlengkapan/foto2.jpg', title: 'Divisi Perlengkapan - Pengecekan & Setting Alat' },
+            { src: 'uploads/kepanitiaan/Perlengkapan/foto3.jpg', title: 'Divisi Perlengkapan - Gladi Bersih & Setup Panggung' },
+            { src: 'uploads/kepanitiaan/Perlengkapan/foto4.jpg', title: 'Divisi Perlengkapan - Koordinasi Lapangan' },
+
+            // Kepanitiaan - Volunteer
+            { src: 'uploads/kepanitiaan/Volunteer/foto1.jpg', title: 'Relawan VFEXTION - Aksi Bersih Lingkungan' },
+            { src: 'uploads/kepanitiaan/Volunteer/foto2.jpg', title: 'Relawan VFEXTION - Pemilahan & Pengumpulan Sampah' },
+            { src: 'uploads/kepanitiaan/Volunteer/foto3.jpg', title: 'Relawan VFEXTION - Edukasi Peduli Lingkungan' },
+            { src: 'uploads/kepanitiaan/Volunteer/foto4.jpg', title: 'Relawan VFEXTION - Dokumentasi Bersama Relawan' }
+        ];
+
+        function initRandomMarquee() {
+            const track = document.querySelector('.marquee-track');
+            if (!track) return;
+
+            // Fisher-Yates Shuffle untuk mengacak foto dokumentasi setiap kali halaman dibuka
+            const shuffled = [...dokumentasiList];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+
+            const createItemsHtml = (items) => items.map(item => `
+                <div class="marquee-item" onclick="openLightbox('${item.src}', '${item.title.replace(/'/g, "\\'")}')">
+                    <img src="${item.src}" alt="${item.title.replace(/"/g, '&quot;')}" loading="lazy" onerror="handleSlideImgError(this, '${item.src}')">
+                    <div class="marquee-overlay">
+                        <span>&#128065; Perbesar</span>
+                    </div>
+                </div>
+            `).join('');
+
+            // Gandakan array yang diacak secara berurutan agar infinite loop marquee tetap mulus tanpa patah
+            track.innerHTML = createItemsHtml(shuffled) + createItemsHtml(shuffled);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            updateActiveSpy();
+            initRandomMarquee();
+            document.querySelectorAll('.project-slider[data-images]').forEach(slider => {
+                const paths = slider.getAttribute('data-images')
+                    .split(',').map(p => p.trim()).filter(p => p);
+                slider.innerHTML = paths.map((p, idx) => `
+                    <div class="project-slide">
+                        <img src="${p}" alt="Dokumentasi (${idx + 1})" loading="lazy" onclick="openLightbox(this.src, this.alt)" onerror="handleSlideImgError(this, '${p}')">
+                    </div>
+                `).join('');
+                slider.scrollLeft = 0;
+            });
+        });
+
+        function moveSlide(btn, dir) {
+            const slider = btn.parentElement.querySelector('.project-slider');
+            if (!slider) return;
+            slider.scrollBy({ left: dir * slider.clientWidth, behavior: 'smooth' });
+        }
+
+        // LIGHTBOX PREVIEW
+        function openLightbox(src, alt) {
+            const modal = document.getElementById('lightboxModal');
+            const img = document.getElementById('lightboxImg');
+            const caption = document.getElementById('lightboxCaption');
+            if (!modal || !img) return;
+            img.src = src;
+            if (caption) caption.textContent = alt || 'Dokumentasi';
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox(e) {
+            if (e && e.target && e.target.closest('.lightbox-content img')) return;
+            const modal = document.getElementById('lightboxModal');
+            if (!modal) return;
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // ANIMASI TYPING NAMA HERO
+        const textArray = ["M Farhan Pratama", "Junior Web Developer", "Office Administration"];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typedTextSpan = document.getElementById("typedText");
+
+        function typeEffect() {
+            if (!typedTextSpan) return;
+            const currentText = textArray[textIndex];
+
+            if (isDeleting) {
+                typedTextSpan.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typedTextSpan.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let speed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === currentText.length) {
+                speed = 2200; // Diam sebentar setelah selesai mengetik satu kata
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % textArray.length;
+                speed = 400; // Jeda sebelum mulai mengetik kata berikutnya
+            }
+
+            setTimeout(typeEffect, speed);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(typeEffect, 600);
+        });
+    </script>
+</body>
+
+</html>
